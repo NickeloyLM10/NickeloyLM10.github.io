@@ -1,0 +1,63 @@
+.social a{
+font-size: 40px;  
+
+text-align: center;
+display: inline-block;
+height: 90px;
+width: 90px;
+line-height: 94px;
+color: black;
+margin: 30px;
+position: relative;
+transition: .4s linear;
+
+/*background: blanchedalmond;*/
+}
+
+
+.social a:hover{
+    color: midnightblue;
+    transform: scale(.9);
+    ;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+   
+}
+
+.social a:hover::before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+}
+.social a::before, .social a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    transition: .4s linear;
+    
+}
+
+.social a:hover::before{
+    border-left: 3px solid;
+    border-right: 3px solid;
+    transform: skewX(20deg);
+}
+.social a:hover::after{
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    transform: skewY(-20deg);
+}
+div{
+    border: 2px solid red;
+}
